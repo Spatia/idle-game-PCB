@@ -9,3 +9,5 @@ fp-info-cache
 # User part
 *.step
 .DS_Store
+Gerbers.zip
+Gerbers/
