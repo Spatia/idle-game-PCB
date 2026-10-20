@@ -8647,10 +8647,6 @@
 		(uuid "6b034274-09d5-4cb7-b8fe-208dbf924dce")
 	)
 	(no_connect
-		(at 124.46 233.68)
-		(uuid "73e7dd08-b128-46fc-8c1f-ceca2c9f57de")
-	)
-	(no_connect
 		(at 356.87 124.46)
 		(uuid "7563660e-4b37-42f6-b71f-c27b2678c10d")
 	)
@@ -9345,6 +9341,16 @@
 			(type default)
 		)
 		(uuid "368ff584-6fcd-48e9-aa14-2c0c6f8d40e4")
+	)
+	(wire
+		(pts
+			(xy 104.14 233.68) (xy 124.46 233.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "371bbc78-4aa1-40ac-b030-7fe6a3bec9d7")
 	)
 	(wire
 		(pts
@@ -20611,6 +20617,83 @@
 			(project "Idle_Game_PCB"
 				(path "/bb34cd31-8114-4d89-9d72-5412f145bb28"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 104.14 233.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6a1037e6-91f5-40a8-920d-3b0ccb262775")
+		(property "Reference" "#PWR074"
+			(at 104.14 240.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 104.14 237.236 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 104.14 233.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 104.14 233.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 104.14 233.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dc18fcc4-a357-4c17-9cf6-5cb956d35d48")
+		)
+		(instances
+			(project "Idle_Game_PCB"
+				(path "/bb34cd31-8114-4d89-9d72-5412f145bb28"
+					(reference "#PWR074")
 					(unit 1)
 				)
 			)
