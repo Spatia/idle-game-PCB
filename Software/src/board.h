@@ -1,0 +1,71 @@
+#ifndef BOARD_H
+#define BOARD_H
+
+#include "stm32f401.h"
+
+#define BTN_UP_PORT GPIOC
+#define BTN_UP_PIN 0
+#define BTN_RIGHT_PORT GPIOC
+#define BTN_RIGHT_PIN 1
+#define BTN_DOWN_PORT GPIOC
+#define BTN_DOWN_PIN 2
+#define BTN_LEFT_PORT GPIOC
+#define BTN_LEFT_PIN 3
+#define BTN_1_PORT GPIOC
+#define BTN_1_PIN 10
+#define BTN_2_PORT GPIOC
+#define BTN_2_PIN 11
+#define BTN_TGR_PORT GPIOC
+#define BTN_TGR_PIN 12
+#define BTN_ONOFF_PORT GPIOC
+#define BTN_ONOFF_PIN 13
+
+#define PWR_LATCH_PORT GPIOD
+#define PWR_LATCH_PIN 2
+
+#define FG_CTRL_PORT GPIOA
+#define FG_CTRL_PIN 2
+#define FG_ADC_CHANNEL 1
+#define FG_DIVIDER_NUM 2
+
+#define USB_PGOOD_PORT GPIOA
+#define USB_PGOOD_PIN 9
+#define USB_CHG_PORT GPIOA
+#define USB_CHG_PIN 10
+
+#define ADA_X_CHANNEL 14
+#define ADA_Y_CHANNEL 15
+
+#define LCD_SPI SPI2_BASE
+#define LCD_SCK_PORT GPIOB
+#define LCD_SCK_PIN 10
+#define LCD_MISO_PORT GPIOB
+#define LCD_MISO_PIN 14
+#define LCD_MOSI_PORT GPIOB
+#define LCD_MOSI_PIN 15
+#define LCD_CS_PORT GPIOB
+#define LCD_CS_PIN 8
+#define LCD_DC_PORT GPIOB
+#define LCD_DC_PIN 12
+#define LCD_RST_PORT GPIOB
+#define LCD_RST_PIN 5
+
+#define BL_PORT GPIOB
+#define BL_PIN 0
+#define BL_TIM TIM3_BASE
+#define BL_AF 2
+
+#define FLASH_SPI SPI1_BASE
+#define FLASH_CS_PORT GPIOA
+#define FLASH_CS_PIN 4
+#define FLASH_SCK_PIN 5
+#define FLASH_MISO_PIN 6
+#define FLASH_MOSI_PIN 7
+
+/* VCP UART : USART1 sur PB6 / PB7 (AF7) */
+#define UART_TX_PORT GPIOB
+#define UART_TX_PIN 6
+#define UART_RX_PORT GPIOB
+#define UART_RX_PIN 7
+
+#endif
